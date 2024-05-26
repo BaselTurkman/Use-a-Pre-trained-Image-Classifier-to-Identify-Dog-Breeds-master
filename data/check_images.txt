@@ -1,0 +1,20 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer: Yes, all the three models classifyed "Cocker_spaniel" and "Cocker_spaniel rotated by 180" as a dog, which is correctly.
+
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: Yes, all the three models classifyed "Cocker_spaniel" and "Cocker_spaniel rotated by 180" as a cocker spaniel, english cocker spaniel, cocker, which is correctly.
+
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: No, the alexnet model classified cat_01 as a african hunting dog, hyena dog, cape hunting dog, lycaon pictus. and resnet model classified cat_01 as norwegian elkhound price  which is incorrect.
+
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer: I would choose the VGG model. In question 1, all three models correctly identified the Cocker Spaniel as a dog. However, the difference lies in how they classified cat_01: the VGG model accurately classified cat_01 as Eggnog, a breed of cat, whereas both AlexNet and ResNet misclassified cat_01.

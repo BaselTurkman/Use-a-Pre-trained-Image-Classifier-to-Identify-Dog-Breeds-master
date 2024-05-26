@@ -104,7 +104,8 @@ def main():
 
     # Function that checks Results Statistics Dictionary using results_stats
     check_calculating_results(results, results_stats)
-    print(results_stats)
+    
+    print_results(results, results_stats, in_arg.arch, True, True)
 
 
     # TODO 6: Define print_results function within the file print_results.py
@@ -114,7 +115,7 @@ def main():
     #      print_results(results, results_stats, in_arg.arch, True, True)
     # Prints summary results, incorrect classifications of dogs (if requested)
     # and incorrectly classified breeds (if requested)
-    print_results(results, results_stats, in_arg.arch, True, True)
+    
     
     # TODO 0: Measure total program runtime by collecting end time
     end_time = time()

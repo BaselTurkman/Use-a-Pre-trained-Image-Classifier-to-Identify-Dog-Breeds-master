@@ -75,10 +75,10 @@ def adjust_results4_isadog(results_dic, dogfile):
           dognames_dic[line] = 1
         else:
           print(f"Warning! The following entry '{line}' already exists in 'dogname_dic'.")
-    for filename in results_dic:
-      check_pet_label = 1 if results_dic.get(filename)[0] in dognames_dic else 0
-      check_classifier_label = 1 if results_dic.get(filename)[1] in dognames_dic else 0
-      results_dic[filename].append(check_pet_label)
-      results_dic[filename].append(check_classifier_label)
+    for value in results_dic.values():
+      check_pet_label = 1 if value[0] in dognames_dic else 0
+      check_classifier_label = 1 if value[1] in dognames_dic else 0
+      value.append(check_pet_label)
+      value.append(check_classifier_label)
 
 
